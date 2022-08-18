@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +17,10 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/', function () {
     return view('welcome');
+
 });
+Route::get('admin',[HomeController::class,'admin'])->name('admin');
 Route::get('homes',[ProductController::class,'homes'])->name('homes');
+
 Route::get('category',[ProductController::class,'category'])->name('category');
 Route::get('slide',[ProductController::class,'slide'])->name('slide');

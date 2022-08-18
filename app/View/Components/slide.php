@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class slide extends Component
+class Slide extends Component
 {
     /**
      * Create a new component instance.
