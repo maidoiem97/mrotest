@@ -1,0 +1,429 @@
+@charset "UTF-8";
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.row {
+  width: calc(100% + 15px*2);
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px; }
+
+.col {
+  width: 100%;
+  float: left;
+  padding: 0 15px;
+  transition: 0.2s; }
+
+/* dùng xs cho màn điện thoại có kích thước nhỏ hơn 576px */
+@media only screen and (max-width: 575px) {
+  .container {
+    max-width: 100%; }
+
+  .col-xs-1 {
+    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
+
+  .col-xs-2 {
+    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
+
+  .col-xs-3 {
+    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
+
+  .col-xs-4 {
+    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
+
+  .col-xs-5 {
+    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
+
+  .col-xs-6 {
+    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
+
+  .col-xs-7 {
+    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
+
+  .col-xs-8 {
+    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
+
+  .col-xs-9 {
+    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
+
+  .col-xs-10 {
+    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
+
+  .col-xs-11 {
+    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
+
+  .col-xs-12 {
+    width: 100%; } }
+/* dùng sm cho màn điện thoại có kích thước lớn hơn 576px */
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px; }
+
+  .col-sm-1 {
+    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
+
+  .col-sm-2 {
+    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
+
+  .col-sm-3 {
+    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
+
+  .col-sm-4 {
+    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
+
+  .col-sm-5 {
+    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
+
+  .col-sm-6 {
+    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
+
+  .col-sm-7 {
+    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
+
+  .col-sm-8 {
+    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
+
+  .col-sm-9 {
+    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
+
+  .col-sm-10 {
+    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
+
+  .col-sm-11 {
+    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
+
+  .col-sm-12 {
+    width: 100%; } }
+/* dùng md cho màn điện thoại có kích thước lớn hơn 768px */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px; }
+
+  .col-md-1 {
+    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
+
+  .col-md-2 {
+    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
+
+  .col-md-3 {
+    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
+
+  .col-md-4 {
+    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
+
+  .col-md-5 {
+    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
+
+  .col-md-6 {
+    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
+
+  .col-md-7 {
+    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
+
+  .col-md-8 {
+    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
+
+  .col-md-9 {
+    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
+
+  .col-md-10 {
+    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
+
+  .col-md-11 {
+    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
+
+  .col-md-12 {
+    width: 100%; } }
+/* dùng lg cho màn điện thoại có kích thước lớn hơn 992px */
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px; }
+
+  .col-lg-1 {
+    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
+
+  .col-lg-2 {
+    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
+
+  .col-lg-3 {
+    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
+
+  .col-lg-4 {
+    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
+
+  .col-lg-5 {
+    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
+
+  .col-lg-6 {
+    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
+
+  .col-lg-7 {
+    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
+
+  .col-lg-8 {
+    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
+
+  .col-lg-9 {
+    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
+
+  .col-lg-10 {
+    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
+
+  .col-lg-11 {
+    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
+
+  .col-lg-12 {
+    width: 100%; } }
+/* dùng xl cho màn điện thoại có kích thước lớn hơn 1200px */
+@media only screen and (min-width: 1230px) {
+  .container {
+    max-width: 1230px; }
+
+  .col-xl-1 {
+    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
+
+  .col-xl-2 {
+    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
+
+  .col-xl-3 {
+    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
+
+  .col-xl-4 {
+    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
+
+  .col-xl-5 {
+    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
+
+  .col-xl-6 {
+    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
+
+  .col-xl-7 {
+    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
+
+  .col-xl-8 {
+    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
+
+  .col-xl-9 {
+    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
+
+  .col-xl-10 {
+    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
+
+  .col-xl-11 {
+    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
+
+  .col-xl-12 {
+    width: 100%; } }
+/* 
+	thuộc tính transform dùng để tạo hiệu ứng
+		rotate(Độ:deg): hiệu ứng xoay VD rotate(90deg)
+		scale(kích thước phóng:số): hiệu ứng zoo VD scale(1)
+
+		translateX(px): di chuyển ngang
+		translateY(px): di chuyển dọc
+
+		skewX(Độ:deg): nghiêng ngang
+		skewY(Độ:deg): nghiêng dọc
+
+		transform-origin: Nó cho phép bạn định vị chiều rộng và chiều cao cho thành phần,
+		dùng chung với transform và có các thuộc tính: top bottom left right và %
+
+		Perspective: tạo hiệu ứng 3D nó sẽ cho ta thấy được chiều sâu của thành phần, 
+		khoảng chiều sâu được tính từ điểm đặt ban đầu tới giá trị của perspective (theo đơn vị pixel).
+	
+	cú pháp tạo 1 animation
+	@keyframes box-rotate-reverse {
+		50% {
+			transform: rotate(-180deg); 
+		}
+		100% { 
+			transform: rotate(-360deg); 
+		}
+	}
+	gọi
+	animation: NameKeyFrames duration(s) timing delay(s) iteration-count direction;
+*/
+/* dùng cho một vài thuộc tính riêng cho trình duyện VD: transition, box-shadow */
+/* căn giữa chiều dọc và ngang trên 1 box */
+/* background opacity */
+@media (max-width: 991px) {
+  .site .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+  .site-header .header-pc {
+    display: none; }
+  .site-header .header-pc.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    max-width: 40%;
+    background: #fff;
+    display: block; }
+    .site-header .header-pc.active .left {
+      display: none; }
+    .site-header .header-pc.active .right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .site-header .header-pc.active .right-cart {
+        display: none; }
+      .site-header .header-pc.active .right-quote, .site-header .header-pc.active .right-register {
+        margin-left: 10px;
+        max-width: 166px;
+        width: 100%;
+        margin-top: 15px; }
+    .site-header .header-pc.active .site-main__breadecrumb .nav, .site-header .header-pc.active .site-main__breadecrumb .account {
+      display: none; }
+    .site-header .header-pc.active .site-main__breadecrumb .menu {
+      width: 100%;
+      align-items: start; }
+    .site-header .header-pc.active .site-main__breadecrumb .menu ul {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 20px; }
+      .site-header .header-pc.active .site-main__breadecrumb .menu ul li {
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid #2c5d8f; }
+      .site-header .header-pc.active .site-main__breadecrumb .menu ul a {
+        padding: 14px 17px;
+        display: inline-block; }
+      .site-header .header-pc.active .site-main__breadecrumb .menu ul li:nth-child(1) {
+        border-top: 1px solid #2c5d8f; }
+      .site-header .header-pc.active .site-main__breadecrumb .menu ul .in:before, .site-header .header-pc.active .site-main__breadecrumb .menu ul .in:after {
+        display: none; }
+  .site-header .header-pc.active ~ .header-overlay {
+    display: block; }
+  .site-header .header-overlay {
+    display: none;
+    content: '';
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 98;
+    width: 100%; }
+  .site-header__mobi {
+    height: 70px;
+    align-items: center;
+    display: flex; }
+  .site-header .right-mobi {
+    display: flex; }
+    .site-header .right-mobi a {
+      align-items: center;
+      display: flex;
+      margin-left: 20px; }
+      .site-header .right-mobi a i {
+        font-size: 26px; }
+  .site-main .site-main__post .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .site-main .site-main__post .content-item {
+      width: 45%; }
+      .site-main .site-main__post .content-item__images a img {
+        width: 100%; }
+  .site-main .site-main__body {
+    display: flex;
+    flex-wrap: wrap; }
+    .site-main .site-main__body .left {
+      width: 100%; }
+    .site-main .site-main__body .right {
+      width: 100%;
+      margin-left: 0px; }
+      .site-main .site-main__body .right-images {
+        justify-content: space-between;
+        display: flex; }
+        .site-main .site-main__body .right-images img {
+          width: 48%; }
+  .site-main .site-main__top .content {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch; }
+    .site-main .site-main__top .content .left {
+      width: 100%; }
+    .site-main .site-main__top .content .right {
+      width: 100%;
+      margin-left: 0px; }
+      .site-main .site-main__top .content .right-title {
+        max-width: 100%; }
+  .site-footer .site-footer__top .box-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .site-footer .site-footer__top .box-content .site-content__supe {
+      width: 60%; }
+    .site-footer .site-footer__top .box-content .site-content__info {
+      width: 40%; }
+    .site-footer .site-footer__top .box-content .site-content__support {
+      width: 60%;
+      margin-top: 30px; }
+    .site-footer .site-footer__top .box-content .site-content__account {
+      width: 40%;
+      margin-top: 30px; }
+    .site-footer .site-footer__top .box-content .site-content__map {
+      width: 100%; } }
+@media (max-width: 1199px) {
+  .site-main__center .product .product-title {
+    display: block; }
+    .site-main__center .product .product-title__text {
+      width: 100%;
+      margin: 5px 0 5px 0; }
+    .site-main__center .product .product-title__menu {
+      width: 100%; }
+      .site-main__center .product .product-title__menu ul {
+        justify-content: flex-start; }
+  .site-main__center .product .product-content {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap; }
+    .site-main__center .product .product-content__item {
+      width: calc(100% / 3); }
+  .site-main .site-main__post .title {
+    height: 70px;
+    display: block; }
+    .site-main .site-main__post .title-text {
+      width: 100%; }
+    .site-main .site-main__post .title-menu {
+      width: 100%; }
+      .site-main .site-main__post .title-menu ul {
+        justify-content: flex-start; } }
+@media (max-width: 767px) {
+  .site-main__center .product .product-title {
+    display: block; }
+    .site-main__center .product .product-title__text {
+      margin: 5px 0 5px 0; }
+    .site-main__center .product .product-title__menu {
+      width: 100%; }
+      .site-main__center .product .product-title__menu ul {
+        justify-content: flex-start; }
+  .site-main__center .product .product-content {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap; }
+    .site-main__center .product .product-content__item {
+      width: calc(100% / 2); }
+  .site-main__images .list {
+    display: block; }
+    .site-main__images .list-item {
+      width: 100%; }
+      .site-main__images .list-item img {
+        width: 100%; } }
+
+/*# sourceMappingURL=responsive.min.css.map */

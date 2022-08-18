@@ -1,0 +1,37 @@
+@import '../_base/_grid.scss';
+@import '../_base/_animate.scss';
+@import '../_base/_mixin.scss';
+.site{
+	&-main{
+		&__content{
+			width: 100%;
+			.title{
+				h1{
+					color: #373737;
+					font-size: 26px;
+					font-weight: 700;
+					line-height: 34px;
+					text-align: left;
+				}
+			}
+			.meta{
+				display: flex;
+				align-items: center;
+				p{
+					text-align: left;
+					span{
+						font-family: Roboto;
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 24px;
+						letter-spacing: 0px;
+						text-align: left;
+						color: #909090;
+
+					}
+				}
+			}
+		}
+	}
+}
